@@ -1,0 +1,58 @@
+.spotifyIndex {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        height: 250px;
+    }
+}
+@media (max-width: 768px) {
+    /* SECCION INICIO */
+    .banner {
+        background-image: url(https://wallpapercave.com/wp/wp77065.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+
+        img{
+            display: none;
+        }
+        .spotifyMobile {
+            display: none;
+        }
+    
+    }
+}
+
+@media (max-width: 425px) {
+    footer{
+        ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        }
+    }
+    /* SECCION INICIO */
+    .banner {
+        background-image: url(https://r1.ilikewallpaper.net/iphone-wallpapers/download/5648/Daft-Punk-DJs-iphone-wallpaper-ilikewallpaper_com.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        
+    }
+    
+}
+
+@media (max-width:641px){
+    .banner{
+    .spotifyIndex {
+        display: none;
+    }
+    .spotifyMobile {
+        display: flex;
+    }
+}
+}

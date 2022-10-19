@@ -1,0 +1,106 @@
+.tituloIntegrantes {
+    font-family: "daft-font";
+    color: $amarillo;
+    text-align: center;
+    }
+    .bannerIntegrantes {
+        color: $blanco;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 20px;
+        justify-content: space-evenly;
+
+        .thomasDiv {
+            display: flex;
+            flex-direction: row;
+            height: 710px;
+            width: 35%;
+            .thomasImg {
+                height: 600px;
+                width: 400px;
+                border-radius: 20px;
+            }
+            .thomasImg:hover {filter: saturate(300%);}
+            .thomasInfo {
+                padding: 20px;
+                font-size: larger;
+                .nombreIntegrantes {
+                    font-family: "daft-font";
+                    color: $amarillo;
+                    font-size:xx-large;
+                }
+            }
+        }
+        .GuyManuelDiv {
+            display: flex;
+            flex-direction: row;
+            height: 710px;
+            width: 35%;
+            .GuyManuelImg {
+                height: 600px;
+                width: 400px;
+                border-radius: 20px;
+            }
+            .GuyManuelImg:hover {filter: saturate(300%);}
+            .GuyManuelInfo {
+                padding: 20px;
+                font-size: larger;
+                .nombreIntegrantes {
+                    font-family: "daft-font";
+                    color: $amarillo;
+                    font-size:xx-large;
+                }
+            }
+        }
+
+    }
+
+@media (max-width:1800px) {
+    main{
+        .tituloIntegrantes{
+            display: none;
+        }
+        .bannerIntegrantes{
+            display: none;
+        }
+        .integrantesMobileMostrar{
+            display: flex;
+            flex-direction: column;
+            .containerInfoMobile{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                p{
+                    font-weight: bolder;
+                    color: $blanco;
+                    background-color: $negro;
+                    opacity: 0.8;
+                }
+            }
+        }
+        .tituloIntegrantesMobile {
+            display: flex;
+            font-family: "daft-font";
+            color: $negro;
+        }
+        .fondoIntegrantesMobile{
+            background-image: url(https://img2.goodfon.com/wallpaper/nbig/6/f7/cherno-beloe-foto-black-and.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+    
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+            height: 900px;
+        }
+    
+    }
+}
+
+
+

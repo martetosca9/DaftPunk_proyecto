@@ -1,0 +1,26 @@
+$verdeLima: #C2F50A;
+$amarillo: #E7FF91;
+$rojo: #d0002d;
+$verde: #1ED98B;
+$negro: #0B0D0C;
+
+$blanco: whitesmoke;
+$celeste: aliceblue;
+
+
+@mixin size($largo, $ancho) {
+    height: $largo;
+    width: $ancho;
+}
+
+$font-size: (
+    grande: xx-large,
+    mediano: 30px,
+    chico: 20px,
+);
+
+@each $font, $size in $font-size {
+    .font-size-#{$font} {
+        font-size: $size;
+    }
+}

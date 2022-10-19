@@ -1,0 +1,55 @@
+.contactoBody {
+    background-image: url(../img/contactobackground.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .contacto {
+        color: $celeste;
+        font-family: "rubik";
+        display: flex;
+        justify-content: center;
+        text-align: start;
+        flex-direction: column;
+        animation-name: fade-in;
+            animation-duration: 1s;
+            .formulario {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 50px;
+                input {
+                    background: none;
+                    border: 1px solid $amarillo;
+                    border-radius: 10px;
+                    padding: 10px;
+                    color: $celeste;
+                    font-family: "rubik";
+                    .sugerencia {
+                        height: 150px;
+                        }
+                    }
+                }
+                .contactoBtn {
+                    margin: 20px;
+                    padding: 20px;
+                    border-radius: 10px;
+                    background-color: $negro;
+                    color: $celeste;
+                    font-family: "daft-font";
+                    font-size: large;
+                    
+                    transition-duration: 0.4s;
+                    }
+                    .contactoBtn:hover {
+                        background-color: $amarillo;
+                        color: $negro;
+                        }
+                        .contactoDiv{
+                            display: flex;
+                            justify-content: center;
+                            img{
+                                height: 190px;
+                                }
+                            }
+        }
+}

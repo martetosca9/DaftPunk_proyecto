@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* FUENTES  */
+@font-face {
+    font-family: "daft-font";
+    src: url(../fonts/Daft_Font.TTF);
+}
+
+@font-face {
+    font-family: "rubik";
+    src: url(../fonts/Rubik-Light.ttf);
+}
+
+@keyframes fade-in {
+    0% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.fuenteRubik {
+    font-family: "rubik";
+}
+
+.bold {
+    font-weight: bold;
+}
+
+p {
+    color: aliceblue;
+    font-family: "rubik";
+}
+
+hr {
+    margin: 50px;
+}
+
+.width100 {
+    width: 100%;
+}
+
+
+/* BODY */
+body {
+    background: $rojo;
+    background: -webkit-linear-gradient(0deg, $rojo 0%, $negro 100%);
+    background: linear-gradient(0deg, $rojo 0%, $negro 100%);
+}
+
+main {
+    animation-name: fade-in;
+    animation-duration: 1s;
+    .banner {
+
+        .titulo {
+            font-family: "daft-font";
+            font-size: xx-large;
+        }
+        
+        .spotify {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        
+            img {
+                height: 250px;
+            }
+        }
+
+        animation-name: fade-in;
+        animation-duration: 1s;
+    
+        font-family: "rubik";
+        background-image: url(../img/banner.jpg);
+        color: whitesmoke;
+        height: 1000px;
+        width: 100%;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px;
+    
+        text-align: center;
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        .footerImg {
+            @include size (30px, 30px);
+            border-radius: 20px;
+        }
+    }
+    
+}
+/* para cuando el footer se mueve por responsive: */
+
+.footerFix{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.spotifyMobile {
+    display: none;
+}
+
+.containerInfoMobile{display: none;}
+.containerInfoMobile2{display: none;}
+.fondoIntegrantesMobile{display: none;}
+
+#buttonColor {
+    background-color: $rojo;
+}
+#buttonColor:hover {
+    background-color: $negro;
+    color: $rojo;
+    font-weight: bolder;
+}
+.iconos{
+    @include size (125px, 125px);
+    border-radius: 10px;
+}
+
+.videoParaMobile {
+    display: none;
+}
+.discografiaMobileSmall {
+    display: none;
+}
+
+@media (max-width:768px){
+    body{
+        footer{
+            display: flex;
+            justify-content: center;
+            p{
+                display: none;
+            }
+            ul{
+                padding-left: 0px;
+            }
+        }
+    }
+}
+

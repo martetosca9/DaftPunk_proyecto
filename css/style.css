@@ -1,0 +1,582 @@
+@charset "UTF-8";
+.font-size-grande, .historiaEscritorio h1 {
+  font-size: xx-large;
+}
+
+.font-size-mediano {
+  font-size: 30px;
+}
+
+.font-size-chico, .discografiaDiv .discos .infoDisco {
+  font-size: 20px;
+}
+
+.spotifyIndex {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.spotifyIndex img {
+  height: 250px;
+}
+
+@media (max-width: 768px) {
+  /* SECCION INICIO */
+  .banner {
+    background-image: url(https://wallpapercave.com/wp/wp77065.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+  }
+  .banner img {
+    display: none;
+  }
+  .banner .spotifyMobile {
+    display: none;
+  }
+}
+@media (max-width: 425px) {
+  footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  /* SECCION INICIO */
+  .banner {
+    background-image: url(https://r1.ilikewallpaper.net/iphone-wallpapers/download/5648/Daft-Punk-DJs-iphone-wallpaper-ilikewallpaper_com.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+@media (max-width: 641px) {
+  .banner .spotifyIndex {
+    display: none;
+  }
+  .banner .spotifyMobile {
+    display: flex;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* FUENTES  */
+@font-face {
+  font-family: "daft-font";
+  src: url(../fonts/Daft_Font.TTF);
+}
+@font-face {
+  font-family: "rubik";
+  src: url(../fonts/Rubik-Light.ttf);
+}
+@keyframes fade-in {
+  0% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+.fuenteRubik {
+  font-family: "rubik";
+}
+
+.bold {
+  font-weight: bold;
+}
+
+p {
+  color: aliceblue;
+  font-family: "rubik";
+}
+
+hr {
+  margin: 50px;
+}
+
+.width100 {
+  width: 100%;
+}
+
+/* BODY */
+body {
+  background: #d0002d;
+  background: -webkit-linear-gradient(0deg, #d0002d 0%, #0B0D0C 100%);
+  background: linear-gradient(0deg, #d0002d 0%, #0B0D0C 100%);
+}
+
+main {
+  animation-name: fade-in;
+  animation-duration: 1s;
+}
+main .banner {
+  animation-name: fade-in;
+  animation-duration: 1s;
+  font-family: "rubik";
+  background-image: url(../img/banner.jpg);
+  color: whitesmoke;
+  height: 1000px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  text-align: center;
+}
+main .banner .titulo {
+  font-family: "daft-font";
+  font-size: xx-large;
+}
+main .banner .spotify {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+main .banner .spotify img {
+  height: 250px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+footer ul .footerImg {
+  height: 30px;
+  width: 30px;
+  border-radius: 20px;
+}
+
+/* para cuando el footer se mueve por responsive: */
+.footerFix {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.spotifyMobile {
+  display: none;
+}
+
+.containerInfoMobile {
+  display: none;
+}
+
+.containerInfoMobile2 {
+  display: none;
+}
+
+.fondoIntegrantesMobile {
+  display: none;
+}
+
+#buttonColor {
+  background-color: #d0002d;
+}
+
+#buttonColor:hover {
+  background-color: #0B0D0C;
+  color: #d0002d;
+  font-weight: bolder;
+}
+
+.iconos {
+  height: 125px;
+  width: 125px;
+  border-radius: 10px;
+}
+
+.videoParaMobile {
+  display: none;
+}
+
+.discografiaMobileSmall {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  body footer {
+    display: flex;
+    justify-content: center;
+  }
+  body footer p {
+    display: none;
+  }
+  body footer ul {
+    padding-left: 0px;
+  }
+}
+/* HEADER */
+.estiloNav {
+  font-family: "daft-font";
+  text-decoration: none;
+  color: whitesmoke;
+  padding: 15px;
+  font-size: larger;
+}
+
+.estiloNav:hover {
+  color: #C2F50A;
+}
+
+.tituloIntegrantes {
+  font-family: "daft-font";
+  color: #E7FF91;
+  text-align: center;
+}
+
+.bannerIntegrantes {
+  color: whitesmoke;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  justify-content: space-evenly;
+}
+.bannerIntegrantes .thomasDiv {
+  display: flex;
+  flex-direction: row;
+  height: 710px;
+  width: 35%;
+}
+.bannerIntegrantes .thomasDiv .thomasImg {
+  height: 600px;
+  width: 400px;
+  border-radius: 20px;
+}
+.bannerIntegrantes .thomasDiv .thomasImg:hover {
+  filter: saturate(300%);
+}
+.bannerIntegrantes .thomasDiv .thomasInfo {
+  padding: 20px;
+  font-size: larger;
+}
+.bannerIntegrantes .thomasDiv .thomasInfo .nombreIntegrantes {
+  font-family: "daft-font";
+  color: #E7FF91;
+  font-size: xx-large;
+}
+.bannerIntegrantes .GuyManuelDiv {
+  display: flex;
+  flex-direction: row;
+  height: 710px;
+  width: 35%;
+}
+.bannerIntegrantes .GuyManuelDiv .GuyManuelImg {
+  height: 600px;
+  width: 400px;
+  border-radius: 20px;
+}
+.bannerIntegrantes .GuyManuelDiv .GuyManuelImg:hover {
+  filter: saturate(300%);
+}
+.bannerIntegrantes .GuyManuelDiv .GuyManuelInfo {
+  padding: 20px;
+  font-size: larger;
+}
+.bannerIntegrantes .GuyManuelDiv .GuyManuelInfo .nombreIntegrantes {
+  font-family: "daft-font";
+  color: #E7FF91;
+  font-size: xx-large;
+}
+
+@media (max-width: 1800px) {
+  main .tituloIntegrantes {
+    display: none;
+  }
+  main .bannerIntegrantes {
+    display: none;
+  }
+  main .integrantesMobileMostrar {
+    display: flex;
+    flex-direction: column;
+  }
+  main .integrantesMobileMostrar .containerInfoMobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main .integrantesMobileMostrar .containerInfoMobile p {
+    font-weight: bolder;
+    color: whitesmoke;
+    background-color: #0B0D0C;
+    opacity: 0.8;
+  }
+  main .tituloIntegrantesMobile {
+    display: flex;
+    font-family: "daft-font";
+    color: #0B0D0C;
+  }
+  main .fondoIntegrantesMobile {
+    background-image: url(https://img2.goodfon.com/wallpaper/nbig/6/f7/cherno-beloe-foto-black-and.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 900px;
+  }
+}
+.historiaEscritorio {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.historiaEscritorio h1 {
+  text-align: center;
+  font-size: xx-large;
+  color: #E7FF91;
+  font-family: "daft-font";
+}
+.historiaEscritorio h2 {
+  padding-top: 50px;
+  text-align: center;
+  color: #E7FF91;
+  font-family: "daft-font";
+}
+.historiaEscritorio p {
+  padding: 50px;
+}
+
+.trayectoria {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  animation-name: fade-in;
+  animation-duration: 1s;
+}
+.trayectoria img {
+  height: 300px;
+}
+
+.trayectoria2 img {
+  height: 300px;
+}
+
+.trayectoria2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.separacion {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.separacion iframe {
+  padding-left: 50px;
+}
+
+@media (max-width: 768px) {
+  .historia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+    width: 700px;
+  }
+  .historia h2 {
+    font-size: small;
+  }
+  .separacion {
+    display: flex;
+    justify-content: center;
+  }
+  .separacion iframe {
+    display: none;
+  }
+  .trayectoria {
+    display: flex;
+    justify-content: center;
+  }
+  .trayectoria img {
+    display: none;
+  }
+  .trayectoria2 {
+    display: flex;
+    justify-content: center;
+  }
+  .trayectoria2 img {
+    display: none;
+  }
+}
+@media (max-width: 425px) {
+  footer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  /* SECCION HISTORIA */
+  .historiaEscritorio {
+    display: none;
+  }
+  .historiaEscritorio h1 {
+    display: none;
+  }
+  .historiaEscritorio h2 {
+    display: none;
+  }
+  .trayectoria p {
+    display: none;
+  }
+  .trayectoria2 p {
+    display: none;
+  }
+  .separacion p {
+    display: none;
+  }
+  .videoParaMobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation-name: fade-in;
+    animation-duration: 1s;
+  }
+  .contactoDiv img {
+    height: 190px;
+  }
+}
+.discografiaDiv {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 40px;
+}
+.discografiaDiv .albumsTitulos {
+  padding-left: 15px;
+}
+.discografiaDiv h1 {
+  text-align: center;
+  color: #E7FF91;
+  font-family: "daft-font";
+}
+.discografiaDiv #discografiaLista {
+  display: flex;
+  flex-direction: column;
+}
+.discografiaDiv .discos {
+  font-family: "rubik";
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  animation-name: fade-in;
+  animation-duration: 1s;
+}
+.discografiaDiv .discos .discosImg {
+  height: 120px; /* Cover de cada album */
+  padding: 5px;
+}
+.discografiaDiv .discos .infoDisco { /* Para darle ancho maximo a la descripción de los albums. */
+  max-width: 900px;
+}
+
+@media (max-width: 768px) {
+  .infoDisco {
+    display: none;
+  }
+  .discosImg {
+    display: none;
+  }
+  .discos p {
+    display: none;
+  }
+  .discografiaDiv .discos {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 320px) {
+  .discografiaDiv {
+    display: none;
+  }
+  .discografiaMobileSmall {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .discografiaMobileSmall iframe {
+    padding: 5px;
+  }
+}
+.contactoBody {
+  background-image: url(../img/contactobackground.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.contactoBody .contacto {
+  color: aliceblue;
+  font-family: "rubik";
+  display: flex;
+  justify-content: center;
+  text-align: start;
+  flex-direction: column;
+  animation-name: fade-in;
+  animation-duration: 1s;
+}
+.contactoBody .contacto .formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+}
+.contactoBody .contacto .formulario input {
+  background: none;
+  border: 1px solid #E7FF91;
+  border-radius: 10px;
+  padding: 10px;
+  color: aliceblue;
+  font-family: "rubik";
+}
+.contactoBody .contacto .formulario input .sugerencia {
+  height: 150px;
+}
+.contactoBody .contacto .contactoBtn {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #0B0D0C;
+  color: aliceblue;
+  font-family: "daft-font";
+  font-size: large;
+  transition-duration: 0.4s;
+}
+.contactoBody .contacto .contactoBtn:hover {
+  background-color: #E7FF91;
+  color: #0B0D0C;
+}
+.contactoBody .contacto .contactoDiv {
+  display: flex;
+  justify-content: center;
+}
+.contactoBody .contacto .contactoDiv img {
+  height: 190px;
+}
+
+/*# sourceMappingURL=style.css.map */

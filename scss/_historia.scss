@@ -1,0 +1,143 @@
+.historiaEscritorio {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+h1{
+    text-align: center; 
+    font-size: xx-large;
+    color: $amarillo;
+    font-family: "daft-font";
+    @extend .font-size-grande;
+}
+    h2{
+        padding-top: 50px;
+        text-align: center;
+        color: $amarillo;
+        font-family: "daft-font";
+    }
+
+    p{
+        padding: 50px;
+    }
+}
+    .trayectoria {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        animation-name: fade-in;
+        animation-duration: 1s;
+        img{
+            height: 300px;
+        }
+    }
+
+    .trayectoria2 img {
+        height: 300px;    
+    }
+
+    .trayectoria2 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .separacion {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .separacion iframe {
+        padding-left: 50px;
+    }
+
+    //responsive
+    @media (max-width: 768px) {
+        .historia {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+    
+            margin: 0;
+            width: 700px;
+
+            h2 {
+                font-size: small;
+            }
+
+        }
+        .separacion {
+            display: flex;
+            justify-content: center;
+            iframe{
+                display: none;
+            }
+        }
+    
+        
+    
+        .trayectoria {
+            display: flex;
+            justify-content: center;
+            
+            img{
+                display: none;
+            }
+        }
+        .trayectoria2 {
+            display: flex;
+            justify-content: center;
+            img{
+                display: none;
+            }
+        }
+    }
+
+    @media (max-width: 425px) {
+        footer ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+        }
+        
+        /* SECCION HISTORIA */
+        .historiaEscritorio{
+            display: none;
+            h1{
+                display: none;
+            }
+            h2{
+                display: none;
+            }
+        }
+        .trayectoria {
+            p{
+                display: none;
+            }
+        }
+        .trayectoria2{
+            p{
+                display: none;
+            }
+        }
+        .separacion{
+            p{
+                display: none;
+            }
+        }
+        .videoParaMobile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            animation-name: fade-in;
+            animation-duration: 1s;
+        }
+    
+        .contactoDiv {
+        img{
+            height: 190px;
+        }
+        }
+    }

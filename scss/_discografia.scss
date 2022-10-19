@@ -1,0 +1,81 @@
+
+.discografiaDiv {
+    .albumsTitulos {
+        padding-left: 15px;
+    }
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    padding: 40px;
+
+    h1 {
+        text-align: center;
+        color: $amarillo;
+        font-family: "daft-font";
+    }
+    #discografiaLista {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .discos {
+        font-family: "rubik";
+        color: aliceblue;
+    
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+        padding: 10px;
+    
+        animation-name: fade-in;
+        animation-duration: 1s;
+    
+        .discosImg {
+            height: 120px;      /* Cover de cada album */
+            padding: 5px;
+        }
+    
+        .infoDisco {        /* Para darle ancho maximo a la descripción de los albums. */
+            max-width: 900px;
+            @extend .font-size-chico
+        }
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .infoDisco{
+        display: none;
+    }
+    .discosImg{
+        display: none;
+    }
+    .discos{
+        p{
+            display: none;
+        }
+        
+    }
+    .discografiaDiv{
+        .discos{
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .discografiaDiv {
+        display: none;
+    }
+    .discografiaMobileSmall {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .discografiaMobileSmall iframe {
+        padding: 5px;
+    }
+}
