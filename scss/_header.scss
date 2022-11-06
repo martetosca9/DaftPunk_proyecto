@@ -6,8 +6,10 @@
     color: whitesmoke;
     padding: 15px;
     font-size: larger;
+    transition: 0.4s;
 }
 
 .estiloNav:hover {
     color: $verdeLima;
+    font-size: 1.3rem;
 }

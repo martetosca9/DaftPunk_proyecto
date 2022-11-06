@@ -110,9 +110,20 @@ footer {
             @include size (30px, 30px);
             border-radius: 20px;
         }
+        li {
+            a {
+                font-size: 1.5rem;
+                color: black;
+                padding: 3px;
+                transition: 0.4s;
+            }
+            a:hover{
+                color: $celeste;
+            }
+        }
     }
-    
 }
+
 /* para cuando el footer se mueve por responsive: */
 
 .footerFix{

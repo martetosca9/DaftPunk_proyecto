@@ -20,8 +20,10 @@
                 height: 600px;
                 width: 400px;
                 border-radius: 20px;
+                transition: 0.5s;
             }
-            .thomasImg:hover {filter: saturate(300%);}
+            .thomasImg:hover {
+                filter: saturate(500%);}
             .thomasInfo {
                 padding: 20px;
                 font-size: larger;
@@ -41,6 +43,7 @@
                 height: 600px;
                 width: 400px;
                 border-radius: 20px;
+                transition: 0.5s;
             }
             .GuyManuelImg:hover {filter: saturate(300%);}
             .GuyManuelInfo {

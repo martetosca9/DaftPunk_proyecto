@@ -160,6 +160,15 @@ footer ul .footerImg {
   width: 30px;
   border-radius: 20px;
 }
+footer ul li a {
+  font-size: 1.5rem;
+  color: black;
+  padding: 3px;
+  transition: 0.4s;
+}
+footer ul li a:hover {
+  color: aliceblue;
+}
 
 /* para cuando el footer se mueve por responsive: */
 .footerFix {
@@ -228,10 +237,12 @@ footer ul .footerImg {
   color: whitesmoke;
   padding: 15px;
   font-size: larger;
+  transition: 0.4s;
 }
 
 .estiloNav:hover {
   color: #C2F50A;
+  font-size: 1.3rem;
 }
 
 .tituloIntegrantes {
@@ -258,9 +269,10 @@ footer ul .footerImg {
   height: 600px;
   width: 400px;
   border-radius: 20px;
+  transition: 0.5s;
 }
 .bannerIntegrantes .thomasDiv .thomasImg:hover {
-  filter: saturate(300%);
+  filter: saturate(500%);
 }
 .bannerIntegrantes .thomasDiv .thomasInfo {
   padding: 20px;
@@ -281,6 +293,7 @@ footer ul .footerImg {
   height: 600px;
   width: 400px;
   border-radius: 20px;
+  transition: 0.5s;
 }
 .bannerIntegrantes .GuyManuelDiv .GuyManuelImg:hover {
   filter: saturate(300%);
@@ -324,7 +337,7 @@ footer ul .footerImg {
     color: #0B0D0C;
   }
   main .fondoIntegrantesMobile {
-    background-image: url(https://img2.goodfon.com/wallpaper/nbig/6/f7/cherno-beloe-foto-black-and.jpg);
+    background-image: url(../img/fondoBN.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
