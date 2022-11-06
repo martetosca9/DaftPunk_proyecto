@@ -22,7 +22,6 @@
 }
 
 @media (max-width: 768px) {
-  /* SECCION INICIO */
   .banner {
     background-image: url(https://wallpapercave.com/wp/wp77065.jpg);
     background-repeat: no-repeat;
@@ -44,7 +43,6 @@
     align-items: center;
     padding: 0;
   }
-  /* SECCION INICIO */
   .banner {
     background-image: url(https://r1.ilikewallpaper.net/iphone-wallpapers/download/5648/Daft-Punk-DJs-iphone-wallpaper-ilikewallpaper_com.jpg);
     background-repeat: no-repeat;
@@ -65,7 +63,6 @@
   box-sizing: border-box;
 }
 
-/* FUENTES  */
 @font-face {
   font-family: "daft-font";
   src: url(../fonts/Daft_Font.TTF);
@@ -105,7 +102,6 @@ hr {
   width: 100%;
 }
 
-/* BODY */
 body {
   background: #d0002d;
   background: -webkit-linear-gradient(0deg, #d0002d 0%, #0B0D0C 100%);
@@ -170,7 +166,6 @@ footer ul li a:hover {
   color: aliceblue;
 }
 
-/* para cuando el footer se mueve por responsive: */
 .footerFix {
   display: flex;
   flex-direction: row;
@@ -230,7 +225,6 @@ footer ul li a:hover {
     padding-left: 0px;
   }
 }
-/* HEADER */
 .estiloNav {
   font-family: "daft-font";
   text-decoration: none;
@@ -559,7 +553,12 @@ footer ul li a:hover {
   align-items: center;
   padding: 50px;
 }
-.contactoBody .contacto .formulario input {
+.contactoBody .contacto .formulario form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.contactoBody .contacto .formulario form input {
   background: none;
   border: 1px solid #E7FF91;
   border-radius: 10px;
@@ -567,7 +566,7 @@ footer ul li a:hover {
   color: aliceblue;
   font-family: "rubik";
 }
-.contactoBody .contacto .formulario input .sugerencia {
+.contactoBody .contacto .formulario form input .sugerencia {
   height: 150px;
 }
 .contactoBody .contacto .contactoBtn {
