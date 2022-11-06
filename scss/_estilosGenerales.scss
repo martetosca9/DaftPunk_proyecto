@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-/* FUENTES  */
+
 @font-face {
     font-family: "daft-font";
     src: url(../fonts/Daft_Font.TTF);
@@ -123,7 +123,6 @@ footer {
     }
 }
 
-/* para cuando el footer se mueve por responsive: */
 
 .footerFix{
     display: flex;
